@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head><title>Variant Not Picked Up Directly</title></head>
+<body>
+<div wicket:id="container">
+    <h1><span wicket:id="type"></span> page: French</h1>
+    <div>
+        <form wicket:id="form">
+            <p>
+                <button wicket:id="noVariantButton">No variant</button>
+                <button wicket:id="theStyleButton">The style</button>
+                <button wicket:id="theVariationButton">The variation</button>
+                <button wicket:id="theLocaleButton">The locale</button>
+            </p>
+        </form>
+        <div wicket:id="panel"></div>
+    </div>
+</div>
+<wicket:link>
+    <ul>
+        <li><a href="HomePage.html">No Ajax</a></li>
+        <li><a href="AjaxHomePage.html">Ajax</a></li>
+    </ul>
+</wicket:link>
+</body>
+</html>
